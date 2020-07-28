@@ -1,106 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Website Dany Ramirez G</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   <link rel="shortcut icon" href="img/DanyProfile.jpg" type="image/x-icon">
-  <link rel="stylesheet" href="css/styles.css">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Website | Dany Ramirez G</title>
 </head>
 <body>
-<header>
+<header id="init">
   <nav>
-    <a href="#">Init</a>
-    <a href="#">About me</a>
-    <a href="#">Portfolio</a>
-    <a href="#">Contact</a>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+        </div>
+        <div class="col-md-6">
+          <ul>
+            <li><a href="#init">Init</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </nav>
-  <section class="header-text">
-    <h1>Daniela Ramirez Gomez</h1>
-    <h2>Software Engineer</h2>
-  </section>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 header-text">
+        <h1>Daniela Ramirez Gomez</h1>
+        <h3>Software Engineer</h3>
+      </div>
+    </div>
+  </div>
   <div class="wave" style="height: 150px; overflow: hidden;">
-    <svg viewBox="0 0 500 150" preserveAspectRatio="none"
-         style="height: 100%; width: 100%;">
-      <path d="M0.00,49.98 C150.00,150.00 349.20,-50.00 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
-            style="stroke: none; fill: #fff;"></path>
+    <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+      <path d="M0.00,49.98 C150.00,150.00 349.20,-50.00 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #fff;"></path>
     </svg>
   </div>
 </header>
-<main>
-  <section class="about-me">
-    <h2 class="tittle">About me</h2>
-    <div class="container-about-me">
-      <img src="img/DanyProfile.jpg" alt="" class="imagen-about-me">
-      <div class="text-content">
-        <h3>Professions</h3>
-        <li>Software Engineer With knowledge in JavaScript, Python programming, unittest, SQL, HTML, and CSS.
-          Currently learning Java programming.
-        </li>
-        <li>Public Accountant with experience in costs, inventories and taxes</li>
-        <p></p>
-        <h3>Hobbies</h3>
-        <li>Passionate about the technology, learn new things</li>
-        <li>Meet People</li>
-        <li>Traveling</li>
-        <li>Theater, acting</li>
-        <p></p>
-        <h3>Resume</h3>
-        <li><a href="https://drive.google.com/file/d/1OVcnOCMmSjvooiCulDVftV4R4fmOYqMX/view?usp=sharing">CV Daniela</a>
-        </li>
+
+<section id="about">
+  <div class="container">
+    <h2 class="text-center tittle">About me</h2>
+    <br>
+    <div class="row">
+      <div class="col-md-5">
+        <img src="./img/DanyProfile.jpg" alt="Foto" class="img-responsive">
       </div>
-    </div>
-  </section>
-  <section class="portfolio">
-    <div class="container">
-      <h2 class="tittle">Portfolio</h2>
-      <div class="portfolio-images">
-        <div class="product">
-          <img src="img/snake.png" alt="">
-          <div class="pictures-hover">
-            <img src="img/click2.png" alt="">
-          </div>
-        </div>
-        <div class="product">
-          <img src="img/hbn_clone.png" alt="">
-          <div class="pictures-hover">
-            <img src="img/click2.png" alt="">
-          </div>
-        </div>
-        <div class="product">
-          <img src="img/git.png" alt="">
-          <div class="pictures-hover">
-            <img src="img/click2.png" alt="">
-          </div>
+      <div class="col-md-7">
+        <div class="text-content text-justify">
+          <br>
+          <h4>Professions</h4>
+          <li>Software Engineer With knowledge in JavaScript, Python programming, unittest, SQL, HTML, and CSS. Currently learning Java programming.</li>
+          <li>Public Accountant with experience in costs, inventories and taxes.</li>
+          <br>
+          <h4>Hobbies</h4>
+          <li>Passionate about the technology, learn new things</li>
+          <li>Meet People</li>
+          <li>Traveling</li>
+          <li>Theater, acting</li>
+          <input type="button" class="link" onclick="window.open('https://drive.google.com/file/d/1vvxzO8a8BB-We8GHRarjkEvSD6eAJyg0/view');" value="CV Daniela" />
         </div>
       </div>
-  </section>
-  <section class="Contact">
-    <div class="container-contact">
-      <h2 class="tittle">Contact me!</h2>
-      <div class="information">
-        <h3>Email</h3>
-        <p>danyramirezg@gmail.com</p>
-      </div>
-      <div class="information">
-        <h3>Telephone</h3>
-        <p>(057)3002855160</p>
-      </div>
-      <p><a href="https://github.com/danyramirezg">Github</a></p>
-      <p><a href="https://www.linkedin.com/in/danielaramirezgomez/">LinkedIn</a></p>
-    </div>
-  </section>
-</main>
-<footer>
-  <div class="footer-container">
-    <div class="footer">
-      <h4>Dany Ramirez Gomez</h4>
-      <p>Medellin, Colombia</p>
     </div>
   </div>
+  <br>
+</section>
+
+<section id="portfolio">
+  <div class="container">
+    <br>
+    <h2 class="text-center tittle">Portfolio</h2>
+    <br>
+    <div class="row">
+      <div class="col-md-4 product">
+        <img src="./img/snake.png" alt="" class="imagen img-responsive">
+        <br>
+        <br>
+        <h4 class="text-center tittle">English Game Learning</h4>
+        <input type="button" class="link" onclick="window.open('https://github.com/danyramirezg/English_Game_Learning');" value="View Project" />
+      </div>
+      <div class="col-md-4 product">
+        <img src="./img/hbn_clone.png" alt="" class="imagen img-responsive">
+        <br>
+        <br>
+        <h4 class="text-center tittle">AirBnB clone</h4>
+        <input type="button" class="link" onclick="window.open('https://github.com/danyramirezg/AirBnB_clone_v4');" value="View Project" />
+      </div>
+      <div class="col-md-4 product">
+        <img src="./img/git.png" alt="" class="imagen img-responsive">
+        <br>
+        <br>
+        <h4 class="text-center tittle">GitHub Profile</h4>
+        <input type="button" class="link" onclick="window.open('https://github.com/danyramirezg?tab=repositories');" value="View Profile" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container">
+    <br>
+    <h2 class="text-center tittle">Contact me!</h2>
+    <br>
+    <div class="row">
+      <div class="col-md-4"></div>
+      <div class="col-md-4">
+        <p>
+          <span><img src="./img/mail.png" alt="" class="icono"></span>
+          <span class="icono-info">danyramirezg@gmail.com</span>
+        </p>
+        <br>
+        <p>
+          <span><img src="./img/phone.png" alt="" class="icono"></span>
+          <span class="icono-info">+57 300 285 4160</span>
+        </p>
+        <br>
+        <p>
+          <span><img src="./img/posicion.png" alt="" class="icono"></span>
+          <span class="icono-info">Medellin, CO</span>
+        </p>
+        <br>
+        <div class="cont-footer-icons">
+          <div class="github"><a href="https://github.com/danyramirezg" style="display: block; height: 100%" target="_blank"></a></div>
+          <div class="twitter"><a href="https://twitter.com/Danyramirezg_" style="display: block; height: 100%" target="_blank"></a></div>
+          <div class="linkedin"><a href="https://www.linkedin.com/in/danielaramirezgomez/" style="display: block; height: 100%" target="_blank"></a></div>
+        </div>
+      </div>
+      <div class="col-md-4"></div>
+    </div>
+  </div>
+  <br>
+</section>
+
+<footer class="footer">
+  &copy; Daniela Ramirez Gomez - 2020
 </footer>
 </body>
 </html>
